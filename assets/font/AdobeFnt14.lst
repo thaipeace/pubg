@@ -1,0 +1,98 @@
+%!Adobe-FontList 1.14
+%Locale:0x406
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Teko-Bold
+FamilyName:Teko
+StyleName:Bold
+FullName:Teko Bold
+MenuName:Teko Bold
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\learning\pubg\assets\Font\Teko-Bold.ttf
+DataFormat:sfntData
+FileLength:310260
+FileModTime:1532061900
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Teko-Light
+FamilyName:Teko
+StyleName:Light
+FullName:Teko Light
+MenuName:Teko Light
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\learning\pubg\assets\Font\Teko-Light.ttf
+DataFormat:sfntData
+FileLength:302540
+FileModTime:1532061900
+WeightClass:300
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Teko-Medium
+FamilyName:Teko
+StyleName:Medium
+FullName:Teko Medium
+MenuName:Teko Medium
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\learning\pubg\assets\Font\Teko-Medium.ttf
+DataFormat:sfntData
+FileLength:313100
+FileModTime:1532061900
+WeightClass:500
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Teko-Regular
+FamilyName:Teko
+StyleName:Regular
+FullName:Teko Regular
+MenuName:Teko Regular
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:C:\learning\pubg\assets\Font\Teko-Regular.ttf
+DataFormat:sfntData
+FileLength:312716
+FileModTime:1532061900
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Teko-Semibold
+FamilyName:Teko
+StyleName:SemiBold
+FullName:Teko SemiBold
+MenuName:Teko SemiBold
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:C:\learning\pubg\assets\Font\Teko-SemiBold.ttf
+DataFormat:sfntData
+FileLength:320020
+FileModTime:1532061900
+WeightClass:600
+WidthClass:5
+AngleClass:0
+%EndFont
+
