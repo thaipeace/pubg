@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="index.js" type="text/javascript"></script>
+  <title>PUPG</title>
+</head>
+
+<body>
+  <header class="pt-md-5">
+    <div class="nav-bar">
+      <div class="container">
+        <div class="d-md-flex justify-content-center py-3 py-md-5 position-relative">
+          <img src="assets/humburger.png" class="d-md-none" id="humburger" />
+          <nav id="menu" class="d-none d-md-flex">
+            <img src="assets/close-w.png" class="d-md-none" id="close-menu"/>
+            <img src="assets/logo.png" class="d-md-none w-100" />
+            <ul class="d-md-flex text-uppercase p-0 m-0 mb-5 mb-md-0">
+              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0"><a href="#main" t="main">Main</a></li>
+              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0"><a href="#pre" t="pre-order">Pre-order</a></li>
+              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0"><a href="#trailer" t="trailer">Trailer</a></li>
+              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0"><a href="#social" t="social-media">Social media</a></li>
+            </ul>
+            <div class="d-md-none d-flex justify-content-center align-items-center">
+              <div><img src="assets/fbl.png" style="filter: invert(100%);" /></div>
+              <div class="mx-2"><img src="assets/twl.png" style="filter: invert(100%);" /></div>
+              <div><img src="assets/youl.png" style="filter: invert(100%);" /></div>
+            </div>
+          </nav>
+          <div class="d-flex">
+            <div class="pr-3 border-right" id="share"><img src="assets/share.png" /></div>
+            <div class="pl-3" id="language"><img src="assets/language.png" /></div>
+          </div>
+          <div id="language-box"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" id="main">
+      <div class="share d-none d-md-block">
+        <div class="fb"><img src="assets/fbl.png" style="filter: invert(100%);"/></div>
+        <div class="tw my-3"><img src="assets/twl.png" style="filter: invert(100%);"/></div>
+        <div class="you"><img src="assets/youl.png" style="filter: invert(100%);"/></div>
+      </div>
+      <div class="logo row mx-0 align-items-center flex-column">
+        <div class="col-12 col-md-7 col-xl-5 px-0">
+          <img src="assets/logo.png" class="banner" />
+        </div>
+        <div class="col-12 col-md-7 col-xl-5 px-0 below">
+          <div class="text-center text-uppercase" style="font-size: 200%;"
+            t="the-original-battle-royale">
+            The Original Battle Royale
+          </div>
+          <div class="row justify-content-center my-4 mx-0">
+            <div class="col-12 col-md-12 col-lg btn px-1">
+              <div class="pl-3 py-3 pre" t="pre-order">
+                Pre-order
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg px-0 btn px-1">
+              <div class="py-3 watch" t="watch-trailer">
+                <img src="assets/play.png" class="mr-3" /> Watch trailer
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg px-0 btn px-1">
+              <div class="py-3 follow" t="follow-us">
+                Follow us
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-5 move-down">
+            <a href="#pre"><img src="assets/move-down.png" width="32px" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <article class="benefit" id="pre">
+    <section class="d-flex flex-column container align-items-center text-center justify-content-between py-lg-5">
+      <div class="d-flex flex-column mt-lg-5 pt-xl-5">
+        <div class="h2 text-uppercase pt-5 mb-0" t="pre-order-now-and-get">Pre-Order Now And Get</div>
+        <div class="h1 text-uppercase text-white mb-0" t="exclusive-benefits">Exclusive Benefits</div>
+        <div class="mb-3 mb-md-5" t="get-a-limited-vehicle-skin-(Permanent)-for-pre-ordering">
+          Get a Limited Vehicle Skin (Permanent) for pre-ordering.
+        </div>
+        <div class="orange-text" t="2021-02-25-until-official-release">2021.02.25 ~ Until official release</div>
+      </div>
+      <div class="row mx-0 justify-content-center mb-5 pb-3 w-100">
+        <img src="assets/google-play.png" class="col-6 col-md-4 col-lg-3 col-xl-2 px-1" />
+        <img src="assets/apple-store.png" class="col-6 col-md-4 col-lg-3 col-xl-2 px-1" />
+      </div>
+    </section>
+  </article>
+
+  <article class="trailer py-5" id="trailer">
+    <div class="container">
+      <div class="title mt-4 my-lg-4 text-capitalize" t="trailer">Trailer</div>
+      <div class="desc d-lg-none text-dark text-center mb-3">
+        <div class="state text-uppercase font-weight-bold" t="pubg-new-state"><b>PUBG: NEW STATE</b></div>
+        <div class="small" style="opacity: 0.8;" t="be-original-developed-by-pubg-studio">
+          Be Original<br class="d-none d-lg-block" /> Developed by PUBG Studio
+        </div>
+      </div>
+      <section class="row mx-0 justify-content-center">
+        <div class="col col-md-7 px-0" id="video-wrapper">
+          <div class="desc d-none d-lg-block">
+            <div class="state text-uppercase font-weight-bold" t="pubg-new-state"><b>PUBG: NEW STATE</b></div>
+            <div class="small" style="opacity: 0.8;" t="be-original-developed-by-pubg-studio">
+              Be Original<br class="d-none d-md-block" /> Developed by PUBG Studio
+            </div>
+          </div>
+          <div id="mask" class="active">
+            <img src="assets/youtube-play.png" />
+          </div>
+          <div class="text-right" id="close-video"><img src="assets/close-video.png" /></div>
+          <iframe width="560" height="315" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
+            allowfullscreen id="video"></iframe>
+        </div>
+      </section>
+      <section class="mt-5 share container">
+        <div class="h1 mb-3 text-uppercase">Share</div>
+        <div class="d-flex justify-content-center">
+          <div class="mr-3"><img src="assets/fbl.png" /></div>
+          <div><img src="assets/twl.png" /></div>
+        </div>
+      </section>
+    </div>
+  </article>
+
+  <article class="social" id="social">
+    <div class="container py-5">
+      <section class="mb-4 row mx-0 justify-content-center">
+        <div class="col-12 col-lg-6 px-0">
+          <div class="text-center text-uppercase" style="font-size: 300%; line-height: 70px;"
+            t="launching-official">
+            Launching Official<br />Social Media Channels
+          </div>
+          <div class="text-center" t="subscribe-to-official-social">
+            <b class="text-uppercase text-white">PUBG: NEW STATE</b><br class="d-lg-none" />
+            Subscribe to official social media channels<br />
+            and be the first to check out the latest updates and events!
+          </div>
+        </div>
+      </section>
+
+      <section class="row flex-column mx-0 network align-items-center">
+        <div class="col-10 col-lg-5 px-0">
+          <div class="row p-4 mx-0 item">
+            <div class="col-5 px-0"><img src="assets/fb.png" class="mr-3" /><span
+              class="d-none d-sm-inline text-white">Facebook</span></div>
+            <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center">LIKE</div>
+          </div>
+          <div class="row p-4 mx-0 item">
+            <div class="col-5 px-0"><img src="assets/tw.png" class="mr-3" /><span
+              class="d-none d-sm-inline text-white">Twitter</span></div>
+            <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center">FOLLOW</div>
+          </div>
+          <div class="row p-4 mx-0 item">
+            <div class="col-5 px-0"><img src="assets/you.png" class="mr-3" /><span
+                class="d-none d-sm-inline text-white">Youtube</span></div>
+            <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center">SUBSCRIBE</div>
+          </div>
+        </div>
+    </div>
+    </section>
+    </div>
+  </article>
+
+  <footer class="py-5">
+    <div class="container">
+      <div class="row align-items-center mx-0">
+        <div class="col-12 col-xl-3 offset-xl-1">
+          <div class="d-flex align-items-center justify-content-center">
+            <div><img src="assets/f1.png" /></div>
+            <div class="ml-4"><img src="assets/f2.png" /></div>
+          </div>
+        </div>
+        <div class="col-12 col-xl-6 my-5">
+          <div class="row align-items-center align-items-xl-start justify-content-center flex-column flex-xl-row menu mx-0">
+            <div class="col-12 px-0 text-center text-xl-left">
+              <a class="mr-2 mr-xl-4" t="terms-of-service" href="terms/terms.html">Terms of service</a>
+              <a class="mr-2 mr-xl-4" t="privacy-policy" href="privacy/privacy.html">Privacy policy</a><br class="d-xl-none"/>
+              <span class="mr-2 mr-xl-4" t="business-requires">Business requires</span>
+              <a class="active" id="only-cali" t="privacy-notes" href="privacy-cali/privacy-cali.html">Privacy notes for California residents</a>
+            </div>
+          </div>
+          <div class="text-muted small text-center text-xl-left mt-4 mt-xl-0" t="copyright">
+            Copyright @2021 KRAFTON Inc. All Rights Reserved
+          </div>
+        </div>
+        <div class="col-12 col-xl-2">
+          <div class="text-center"><img src="assets/f3.png"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie">
+    <div class="py-3" t="cookie">
+      This website uses cookies to ensure you get the best experience on our web site. <a href="">Learn more</a>
+    </div>
+    <div class="py-3 close" id="cookie-close"><img src="assets/close.png" /></div>
+  </div>
+
+  <div id="modal">
+    <div class="overlay"></div>
+    <div class="wrapper">
+      <div class="header">
+        <img src="assets/close-w.png" id="modal-close" />
+      </div>
+      <div class="content" id="modal-content"></div>
+    </div>
+  </div>
+</body>
+
+</html>
