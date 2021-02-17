@@ -174,7 +174,7 @@ header .logo .follow {
 }
 
 #language-box > div {
-    padding: 15px 40px 15px 20px;
+    padding: 3px 40px 3px 20px;
     text-transform: uppercase;
 }
 
@@ -290,6 +290,7 @@ footer {
     bottom: 0;
     color: var(--black);
     width: 100vw;
+    z-index: 6;
 }
 
 #cookie a {

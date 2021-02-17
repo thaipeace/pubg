@@ -30,6 +30,8 @@ var index = function () {
             item.addEventListener('click', (e) => {
               selectedLang = lang[e.target.innerText.toLowerCase()]
               translate()
+              toggle(langBoxElm)
+
               const onlyCali = document.getElementById('only-cali')
               if (selectedLang.name === "English" && !onlyCali.classList.contains('active')) {
                 onlyCali.classList.add('active')
