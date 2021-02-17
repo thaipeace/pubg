@@ -22,6 +22,7 @@ var index = function () {
           let allText = rawFile.responseText
           lang = JSON.parse(allText)
           defaultLang = lang.english
+          selectedLang = lang.english
 
           const langBoxElm = document.getElementById("language-box")
           Object.keys(lang).forEach(key => {
@@ -52,8 +53,12 @@ var index = function () {
     rawFile.send(null);
   }
 
-  function translate() {
-    const items = document.querySelectorAll("[t]")
+  function translate(keys) {
+    let items = document.querySelectorAll("[t]")
+    if (keys) {
+      items = Array.from(items).filter(i => keys.includes(i.getAttribute("t")))
+    }
+
     items.forEach(elem => {
       const key = elem.getAttribute("t")
       elem.innerHTML = selectedLang.data[key] ? selectedLang.data[key] : defaultLang.data[key]
@@ -130,6 +135,7 @@ var index = function () {
         </div>
       `
       modalContentElm.appendChild(shareContent)
+      translate(['share-content'])
     })
 
     modalCloseElm.addEventListener('click', () => {
@@ -173,7 +179,8 @@ var index = function () {
   return {
     loadLanguageFile: loadLanguageFile,
     init: init,
-    adjustVideoOffset: adjustVideoOffset
+    adjustVideoOffset: adjustVideoOffset,
+    translate: translate
   }
 }();
 
@@ -190,14 +197,14 @@ function goToConfirm() {
   const shareContent = document.createElement('div')
   shareContent.innerHTML = `
     <div>
-      <div class="text-center mb-4" t="share-content">
+      <div class="text-center mb-4" t="share-confirm">
         Copied successfully.<br/>
         Paste it wherever you would like.        
       </div>
       <div class="text-center">
-        <span class="px-5 py-3 orange-bg text-dark"
+        <span class="px-5 py-3 orange-bg text-dark text-uppercase"
           onclick="onConfirm()">
-          <b>CONFIRM</b>
+          <b t="confirm">confirm</b>
         </span>
       </div>
     </div>
@@ -205,6 +212,7 @@ function goToConfirm() {
 
   modalContentElm.innerHTML = ""
   modalContentElm.appendChild(shareContent)
+  index.translate(['share-confirm', 'confirm'])
 }
 
 function onConfirm() {
