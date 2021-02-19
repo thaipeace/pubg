@@ -22,7 +22,8 @@ var index = function () {
           let allText = rawFile.responseText
           lang = JSON.parse(allText)
           defaultLang = lang.en
-          selectedLang = lang.en
+          selectedLang = localStorage.getItem('lang') ? lang[localStorage.getItem('lang')] : lang.en
+          translate()
 
           const langBoxElm = document.getElementById("language-box")
           Object.keys(lang).forEach(key => {
@@ -32,6 +33,7 @@ var index = function () {
             item.addEventListener('click', (e) => {
               e.stopPropagation()
               selectedLang = lang[e.target.getAttribute('t')]
+              localStorage.setItem('lang', selectedLang.code)
               translate()
               toggle(langBoxElm)
               translate(["ar","de", "en","es", "es-MX", "fr", "hi", "id", "it", "jp", "kr", "ms", "pt-PT", "pt-BR", "ru", "th", "tr", "zh-Hans", "zh-Hant", "vi"])
