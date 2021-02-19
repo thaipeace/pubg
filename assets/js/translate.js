@@ -21,15 +21,21 @@ var translate = function () {
         if (rawFile.status === 200 || rawFile.status == 0) {
           let allText = rawFile.responseText
           lang = JSON.parse(allText)
-          defaultLang = lang.english
+          defaultLang = lang.en
+          selectedLang = lang.en
 
           const langBoxElm = document.getElementById("language-box")
           Object.keys(lang).forEach(key => {
             let item = document.createElement('div')
-            item.innerHTML = lang[key].name
+            item.setAttribute('t', lang[key].code)
+            item.innerHTML = `${lang[key].name}`
             item.addEventListener('click', (e) => {
-              selectedLang = lang[e.target.innerText.toLowerCase()]
+              e.stopPropagation()
+              selectedLang = lang[e.target.getAttribute('t')]
               translate()
+              toggle(langBoxElm)
+              translate(["ar","de", "en","es", "es-MX", "fr", "hi", "id", "it", "jp", "kr", "ms", "pt-PT", "pt-BR", "ru", "th", "tr", "zh-Hans", "zh-Hant", "vi"])
+
               const onlyCali = document.getElementById('only-cali')
               if (selectedLang.name === "English" && !onlyCali.classList.contains('active')) {
                 onlyCali.classList.add('active')
@@ -39,6 +45,7 @@ var translate = function () {
             })
             langBoxElm.appendChild(item)
           })
+          translate(["ar","de", "en","es", "es-MX", "fr", "hi", "id", "it", "jp", "kr", "ms", "pt-PT", "pt-BR", "ru", "th", "tr", "zh-Hans", "zh-Hant", "vi"])
 
           const langElm = document.getElementById("language")
           langElm.addEventListener('click', () => {
@@ -50,8 +57,12 @@ var translate = function () {
     rawFile.send(null);
   }
 
-  function translate() {
-    const items = document.querySelectorAll("[t]")
+  function translate(keys) {
+    let items = document.querySelectorAll("[t]")
+    if (keys) {
+      items = Array.from(items).filter(i => keys.includes(i.getAttribute("t")))
+    }
+
     items.forEach(elem => {
       const key = elem.getAttribute("t")
       elem.innerHTML = selectedLang.data[key] ? selectedLang.data[key] : defaultLang.data[key]
