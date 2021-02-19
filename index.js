@@ -13,6 +13,25 @@ var index = function () {
     }
   }
 
+  function handleAfterChangeLanguage() {
+    // Hide Cali
+    const onlyCali = document.getElementById('only-cali')
+    if (selectedLang.code === "en" && !onlyCali.classList.contains('active')) {
+      onlyCali.classList.add('active')
+    } else if (selectedLang.code !== "en" && onlyCali.classList.contains('active')) {
+      onlyCali.classList.remove('active')
+    }
+
+    // Highline selected language
+    const langItemElms = document.querySelectorAll("#language-box > div")
+    Array.from(langItemElms).forEach(item => {
+      item.classList.remove('active')
+      if (localStorage.getItem('lang') === item.getAttribute('t')) {
+        item.classList.add('active')
+      }
+    })
+  }
+
   function loadLanguageFile() {
     let rawFile = new XMLHttpRequest()
     rawFile.open("GET", "i18n.json", false)
@@ -37,17 +56,12 @@ var index = function () {
               translate()
               toggle(langBoxElm)
               translate(["ar","de", "en","es", "es-MX", "fr", "hi", "id", "it", "jp", "kr", "ms", "pt-PT", "pt-BR", "ru", "th", "tr", "zh-Hans", "zh-Hant", "vi"])
-
-              const onlyCali = document.getElementById('only-cali')
-              if (selectedLang.name === "English" && !onlyCali.classList.contains('active')) {
-                onlyCali.classList.add('active')
-              } else if (selectedLang.name !== "English" && onlyCali.classList.contains('active')) {
-                onlyCali.classList.remove('active')
-              }
+              handleAfterChangeLanguage()
             })
             langBoxElm.appendChild(item)
           })
           translate(["ar","de", "en","es", "es-MX", "fr", "hi", "id", "it", "jp", "kr", "ms", "pt-PT", "pt-BR", "ru", "th", "tr", "zh-Hans", "zh-Hant", "vi"])
+          handleAfterChangeLanguage()
 
           const langElm = document.getElementById("language")
           langElm.addEventListener('click', () => {

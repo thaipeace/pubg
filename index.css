@@ -178,6 +178,10 @@ header .logo .follow {
     text-transform: uppercase;
 }
 
+#language-box > div.active {
+    background-color: #0a2641;
+}
+
 #language-box > div:hover {
     background-color: #133b3d;
 }
