@@ -21,10 +21,10 @@
             <img src="assets/close-w.png" class="d-md-none" id="close-menu"/>
             <img src="assets/logo.png" class="d-md-none w-100" />
             <ul class="d-md-flex text-uppercase p-0 m-0 mb-5 mb-md-0">
-              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0"><a href="#main" t="main">Main</a></li>
-              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0"><a href="#pre" t="pre-order">Pre-order</a></li>
-              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0"><a href="#trailer" t="trailer">Trailer</a></li>
-              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0"><a href="#social" t="social-media">Social media</a></li>
+              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0" onmousedown="moveTo('main')" t="main">Main</li>
+              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0" onmousedown="moveTo('pre')" t="pre-order">Pre-order</li>
+              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0" onmousedown="moveTo('trailer')" t="trailer">Trailer</li>
+              <li class="mx-md-3 mx-lg-5 mb-3 mb-md-0" onmousedown="moveTo('social')" t="social-media">Social media</li>
             </ul>
             <div class="d-md-none d-flex justify-content-center align-items-center">
               <div><img src="assets/fbl.png" style="filter: invert(100%);" /></div>
@@ -33,8 +33,8 @@
             </div>
           </nav>
           <div class="d-flex">
-            <div class="pr-3 border-right" id="share"><img src="assets/share.png" /></div>
-            <div class="pl-3" id="language"><img src="assets/language.png" /></div>
+            <div class="pr-3 border-right" id="share"><img src="assets/share.png" class="cursor-pointer" /></div>
+            <div class="pl-3" id="language"><img src="assets/language.png" class="cursor-pointer" /></div>
           </div>
           <div id="language-box" class="small"></div>
         </div>
@@ -43,9 +43,19 @@
 
     <div class="container" id="main">
       <div class="share d-none d-md-block">
-        <div class="fb"><img src="assets/fbl.png" style="filter: invert(100%);"/></div>
-        <div class="tw my-3"><img src="assets/twl.png" style="filter: invert(100%);"/></div>
-        <div class="you"><img src="assets/youl.png" style="filter: invert(100%);"/></div>
+        <div class="fb">
+          <a href="https://www.facebook.com/PUBG.VN.Official/?brand_redir=1637843273206257" target="_blank">
+            <img src="assets/fbl.png"/>
+          </a>
+        </div>
+        <div class="tw my-3">
+          <a href="https://twitter.com/pubg" target="_blank"><img src="assets/twl.png"/></a>
+        </div>
+        <div class="you">
+          <a href="https://www.youtube.com/channel/UCTDO0RgowRyaAEUrPnBAg4g" target="_blank">
+            <img src="assets/youl.png"/>
+          </a>
+        </div>
       </div>
       <div class="logo row mx-0 align-items-center flex-column">
         <div class="col-12 col-md-7 col-xl-5 px-0">
@@ -58,23 +68,24 @@
           </div>
           <div class="row justify-content-center my-4 mx-0">
             <div class="col-12 col-md-12 col-lg btn px-1">
-              <div class="pl-3 py-3 pre" t="pre-order">
+              <div class="pl-3 py-3 pre" t="pre-order" onclick="moveTo('pre')">
                 Pre-order
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg px-0 btn px-1">
-              <div class="py-3 watch">
+              <div class="py-3 watch" onclick="moveTo('trailer')">
                 <img src="assets/play.png" class="mr-3" /><span t="watch-trailer">Watch trailer</span>
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg px-0 btn px-1">
-              <div class="py-3 follow" t="follow-us">
+              <div class="py-3 follow" t="follow-us" onclick="moveTo('social')">
                 Follow us
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-center mt-5 move-down">
-            <a href="#pre"><img src="assets/move-down.png" width="32px" /></a>
+          <div class="d-flex justify-content-center mt-5 move-down cursor-pointer"
+            onclick="moveTo('pre')">
+            <img src="assets/move-down.png" width="32px" />
           </div>
         </div>
       </div>
@@ -92,8 +103,13 @@
         <div class="orange-text" t="2021-02-25-until-official-release">2021.02.25 ~ Until official release</div>
       </div>
       <div class="row mx-0 justify-content-center mb-5 pb-3 w-100">
-        <img src="assets/google-play.png" class="col-6 col-md-4 col-lg-3 col-xl-2 px-1" />
-        <img src="assets/apple-store.png" class="col-6 col-md-4 col-lg-3 col-xl-2 px-1" />
+        <a href="https://play.google.com/store/apps/details?id=com.tencent.ig&hl=vi&gl=US" target="_blank"
+          class="col-6 col-md-4 col-lg-3 col-xl-2 px-1">
+          <img src="assets/google-play.png" class="w-100"/>
+        </a>
+        <a href="https://apps.apple.com/us/app/pubg-mobile-runic-power/id1330123889" target="_blank" class="col-6 col-md-4 col-lg-3 col-xl-2 px-1">
+          <img src="assets/apple-store.png" class="w-100"/>
+        </a>
       </div>
     </section>
   </article>
@@ -109,7 +125,7 @@
       </div>
       <section class="row mx-0 justify-content-center">
         <div class="col col-md-7 px-0" id="video-wrapper">
-          <div class="desc d-none d-lg-block">
+          <div class="desc d-none d-lg-block active" id="desc">
             <div class="state text-uppercase font-weight-bold" t="pubg-new-state"><b>PUBG: NEW STATE</b></div>
             <div class="small" style="opacity: 0.8;" t="be-original-developed-by-pubg-studio">
               Be Original<br class="d-none d-md-block" /> Developed by PUBG Studio
@@ -127,8 +143,12 @@
       <section class="mt-5 share container">
         <div class="h1 mb-3 text-uppercase" t="share">Share</div>
         <div class="d-flex justify-content-center">
-          <div class="mr-3"><img src="assets/fbl.png" /></div>
-          <div><img src="assets/twl.png" /></div>
+          <div class="mr-3">
+            <a href="https://www.facebook.com/PUBG.VN.Official/?brand_redir=1637843273206257" target="_blank"><img src="assets/fbl.png" /></a>
+          </div>
+          <div>
+            <a href="https://twitter.com/pubg" target="_blank"><img src="assets/twl.png" /></a>
+          </div>
         </div>
       </section>
     </div>
@@ -155,24 +175,26 @@
           <div class="row p-4 mx-0 item">
             <div class="col-5 px-0"><img src="assets/fb.png" class="mr-3" /><span
               class="d-none d-sm-inline text-white">Facebook</span></div>
-            <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center text-uppercase"
-              t="like">LIKE</div>
+            <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center text-uppercase">
+              <a href="https://www.facebook.com/PUBG.VN.Official/?brand_redir=1637843273206257" target="_blank" t="like">LIKE</a>
+            </div>
           </div>
           <div class="row p-4 mx-0 item">
             <div class="col-5 px-0"><img src="assets/tw.png" class="mr-3" /><span
               class="d-none d-sm-inline text-white">Twitter</span></div>
-            <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center text-uppercase"
-              t="follow">FOLLOW</div>
+            <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center text-uppercase">
+              <a href="https://twitter.com/pubg" target="_blank" t="follow">FOLLOW</a>
+            </div>
           </div>
           <div class="row p-4 mx-0 item">
             <div class="col-5 px-0"><img src="assets/you.png" class="mr-3" /><span
                 class="d-none d-sm-inline text-white">Youtube</span></div>
-            <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center text-uppercase"
-              t="subscribe">SUBSCRIBE</div>
+            <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center text-uppercase">
+              <a href="https://www.youtube.com/channel/UCTDO0RgowRyaAEUrPnBAg4g" target="_blank" t="subscribe">SUBSCRIBE</a>
+            </div>
           </div>
         </div>
-    </div>
-    </section>
+      </section>
     </div>
   </article>
 
