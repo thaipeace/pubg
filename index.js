@@ -55,12 +55,12 @@ var index = function () {
               localStorage.setItem('lang', selectedLang.code)
               translate()
               toggle(langBoxElm)
-              translate(["ar","de", "en","es", "es-MX", "fr", "hi", "id", "it", "jp", "kr", "ms", "pt-PT", "pt-BR", "ru", "th", "tr", "zh-Hans", "zh-Hant", "vi"])
+              translate(["ar", "de", "en", "es", "es-MX", "fr", "hi", "id", "it", "jp", "kr", "ms", "pt-PT", "pt-BR", "ru", "th", "tr", "zh-Hans", "zh-Hant", "vi"])
               handleAfterChangeLanguage()
             })
             langBoxElm.appendChild(item)
           })
-          translate(["ar","de", "en","es", "es-MX", "fr", "hi", "id", "it", "jp", "kr", "ms", "pt-PT", "pt-BR", "ru", "th", "tr", "zh-Hans", "zh-Hant", "vi"])
+          translate(["ar", "de", "en", "es", "es-MX", "fr", "hi", "id", "it", "jp", "kr", "ms", "pt-PT", "pt-BR", "ru", "th", "tr", "zh-Hans", "zh-Hant", "vi"])
           handleAfterChangeLanguage()
 
           const langElm = document.getElementById("language")
@@ -90,10 +90,10 @@ var index = function () {
     window.addEventListener("scroll", () => {
       let top = window.scrollY
       if (top !== 0 && !document.body.classList.contains('scrolled')) {
-        document.body.classList.add('scrolled')        
+        document.body.classList.add('scrolled')
       } else if (top === 0 && document.body.classList.contains('scrolled')) {
         document.body.classList.remove('scrolled')
-      }      
+      }
     }, false);
 
     //Show mobile menu
@@ -115,7 +115,7 @@ var index = function () {
       menuElm.addEventListener('click', (e) => {
         e.stopPropagation();
         const menuItems = document.querySelectorAll('#menu a')
-        menuItems.forEach(item => {          
+        menuItems.forEach(item => {
           if (e.target !== item) {
             item.classList.remove('active')
           } else if (!e.target.classList.contains('active')) {
@@ -173,8 +173,11 @@ var index = function () {
 
     const maskElm = document.getElementById('mask')
     const modalElm = document.getElementById('modal')
+    const descElm = document.getElementById('desc')
+    const closeVideoElm = document.getElementById('close-video')
     maskElm.addEventListener('click', () => {
       toggle(maskElm)
+      toggle(descElm)
       for (var i = 0; i < modalElm.childNodes.length; i++) {
         if (modalElm.childNodes[i].className == "wrapper") {
           modalElm.childNodes[i].remove()
@@ -186,13 +189,37 @@ var index = function () {
       videoElm.style.position = 'relative'
       videoElm.setAttribute('src', `https://www.youtube.com/embed/YLwCfTA6LCQ?rel=0&autoplay=1&mute=true`)
       toggle(closeVideoElm)
-    })
 
-    const closeVideoElm = document.getElementById('close-video')
+      clickOutSide('video-wrapper', closeVideo)
+    })
+    
     closeVideoElm.addEventListener('click', () => {
-      toggle(modalElm)
-      toggle(closeVideoElm)
-      toggle(maskElm)
+      closeVideo()
+    })
+  }
+
+  function closeVideo() {
+    const videoElm = document.getElementById('video')
+    const maskElm = document.getElementById('mask')
+    const modalElm = document.getElementById('modal')
+    const descElm = document.getElementById('desc')
+    const closeVideoElm = document.getElementById('close-video')
+    videoElm.setAttribute('src', '')
+    toggle(modalElm)
+    toggle(closeVideoElm)
+    toggle(maskElm)
+    toggle(descElm)
+  }
+
+  function clickOutSide(id, callback) {
+    const elem = document.getElementById(id)
+
+    document.addEventListener('click', () => {
+      callback()
+    })
+    
+    elem.addEventListener('click', (e) => {
+      e.stopPropagation()
     })
   }
 
@@ -211,30 +238,41 @@ window.onload = function () {
 }
 
 function goToConfirm() {
-  // document.execCommand("copy");
-
-  const modalContentElm = document.getElementById('modal-content')
-  const shareContent = document.createElement('div')
-  shareContent.innerHTML = `
-    <div>
-      <div class="text-center mb-4" t="share-confirm">
-        Copied successfully.<br/>
-        Paste it wherever you would like.        
+  const url = window.location.href;
+  navigator.clipboard.writeText(url).then(function () {
+    const modalContentElm = document.getElementById('modal-content')
+    const shareContent = document.createElement('div')
+    shareContent.innerHTML = `
+      <div>
+        <div class="text-center mb-4" t="share-confirm">
+          Copied successfully.<br/>
+          Paste it wherever you would like.        
+        </div>
+        <div class="text-center">
+          <span class="px-5 py-3 orange-bg text-dark text-uppercase"
+            onclick="onConfirm()">
+            <b t="confirm">confirm</b>
+          </span>
+        </div>
       </div>
-      <div class="text-center">
-        <span class="px-5 py-3 orange-bg text-dark text-uppercase"
-          onclick="onConfirm()">
-          <b t="confirm">confirm</b>
-        </span>
-      </div>
-    </div>
-  `
+    `
 
-  modalContentElm.innerHTML = ""
-  modalContentElm.appendChild(shareContent)
-  index.translate(['share-confirm', 'confirm'])
+    modalContentElm.innerHTML = ""
+    modalContentElm.appendChild(shareContent)
+    index.translate(['share-confirm', 'confirm'])
+  }, function (err) { });
 }
 
 function onConfirm() {
   document.getElementById("modal-close").click()
+}
+
+function moveTo(id) {
+  const elem = document.getElementById(id)
+
+  window.scrollTo({
+    top: elem.offsetTop - 120,
+    left: 0,
+    behavior: 'smooth'
+  });
 }

@@ -65,6 +65,10 @@ a:hover {
     color: var(--brown);
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .container {
     max-width: 1830px;
 }
@@ -84,6 +88,7 @@ header .nav-bar {
 
 header nav ul li {
     list-style: none none;
+    cursor: pointer;
 }
 
 header nav ul li a {
@@ -113,6 +118,7 @@ header #main .share {
     width: fit-content;
     flex-direction: column;
     z-index: 2;
+    cursor: pointer;
 }
 
 header #main .share img:hover {
@@ -263,7 +269,6 @@ header .logo .follow {
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    cursor: pointer;
     background: url(assets/piece.png) no-repeat #0a2023;
     background-position: 1000px 1000px;
     margin-bottom: 8px;
@@ -496,6 +501,11 @@ footer {
         top: 40px;
         left: 40px;
         z-index: 5;
+        display: none !important;
+    }
+
+    .trailer .desc.active {
+        display: block !important;
     }
 }
 
