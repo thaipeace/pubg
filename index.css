@@ -95,8 +95,8 @@ header nav ul li a {
     padding-bottom: 3px;
 }
 
-header nav ul li a:hover,
-header nav ul li a.active {
+header nav ul li:hover,
+header nav ul li.active {
     color: var(--orange);
     background: url(assets/menu-hover.png) center bottom no-repeat;
     background-size: 100% auto;

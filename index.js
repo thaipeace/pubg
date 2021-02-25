@@ -1,8 +1,8 @@
-var index = function () {
-  lang = {}
-  selectedLang = {}
-  defaultLang = {}
+var lang = {},
+    selectedLang = {},
+    defaultLang = {}
 
+var index = function () {
   function toggle(elm) {
     if (elm) {
       if (elm.classList.contains('active')) {
@@ -114,7 +114,7 @@ var index = function () {
     if (menuElm) {
       menuElm.addEventListener('click', (e) => {
         e.stopPropagation();
-        const menuItems = document.querySelectorAll('#menu a')
+        const menuItems = document.querySelectorAll('#menu li')
         menuItems.forEach(item => {
           if (e.target !== item) {
             item.classList.remove('active')
@@ -147,10 +147,10 @@ var index = function () {
           <div class="text-center mb-4" t="share-content">
             Share the news about<br/>PUBG: NEW STATE with your friends!
           </div>
-          <div class="text-center" onclick="goToConfirm()">
-            <img src="assets/fb.png" width="35" /> 
-            <img src="assets/tw.png" width="35" class="mx-3" /> 
-            <img src="assets/sh.png" width="35"/> 
+          <div class="text-center">
+            <img src="assets/fb.png" width="35" onclick="socialShare('facebook', 'https://youtu.be/v-7XAgT1Z1w')" /> 
+            <img src="assets/tw.png" width="35" class="mx-3" onclick="socialShare('twitter', 'https://youtu.be/v-7XAgT1Z1w')" /> 
+            <img src="assets/sh.png" width="35" onclick="goToConfirm()" /> 
           </div>
         </div>
       `
@@ -190,9 +190,10 @@ var index = function () {
       videoElm.setAttribute('src', `https://www.youtube.com/embed/YLwCfTA6LCQ?rel=0&autoplay=1&mute=true`)
       toggle(closeVideoElm)
 
-      clickOutSide('video-wrapper', closeVideo)
+      const overlayElm = document.getElementById('overlay')
+      overlayElm.addEventListener('click', closeVideo)
     })
-    
+
     closeVideoElm.addEventListener('click', () => {
       closeVideo()
     })
@@ -209,18 +210,6 @@ var index = function () {
     toggle(closeVideoElm)
     toggle(maskElm)
     toggle(descElm)
-  }
-
-  function clickOutSide(id, callback) {
-    const elem = document.getElementById(id)
-
-    document.addEventListener('click', () => {
-      callback()
-    })
-    
-    elem.addEventListener('click', (e) => {
-      e.stopPropagation()
-    })
   }
 
   return {
@@ -274,5 +263,58 @@ function moveTo(id) {
     top: elem.offsetTop - 120,
     left: 0,
     behavior: 'smooth'
-  });
+  })
+
+  if (id === 'trailer') {
+    const maskElm = document.getElementById('mask')
+    maskElm.click();
+  }
+}
+
+function socialShare(mediaType, url, type) {
+  var ori_href = url;
+  var href = encodeURIComponent(url);
+  var title = document.title;
+
+  console.log(mediaType);
+  console.log(href);
+  console.log(title);
+
+  if (!mediaType || !href || !title) return;
+
+  var lang = selectedLang.data;
+
+  if (mediaType == 'facebook') {
+    var fbTitle = lang['facebook-title'];
+    var fbText = lang['facebook-textarea'];
+    var fbYouTubeTitle = lang['facebook-youtube-title'];
+    r = "width=626, height=436, resizable=no, scrollbars=no, status=no, left=0, top=0, screenX=0, screenY=0",
+      e = ori_href,
+      n = " ",
+      i = void 0 === n ? "" : n,
+      c = type == 'youtube' ? fbYouTubeTitle : fbTitle,
+      o = type == 'youtube' ? fbYouTubeTitle : fbText,
+      a = void 0 === o ? "" : o;
+
+    "" !== i && (c += "".concat(i, "\n")), "" !== a && (c += "".concat(a, "\n"));
+    var u = "".concat("https://www.facebook.com/sharer/sharer.php", "?u=").concat(encodeURIComponent(e), "&quote=").concat(encodeURIComponent(c)),
+      l = window.open(u, "facebook", r);
+    if ((null !== l && l.focus(), "function" == typeof s)) {
+      var f = function () {
+        window.setTimeout(function () {
+          !l || l.closed ? ((l = null), s()) : f();
+        }, 500);
+      };
+      f();
+    }
+  }
+  else if (mediaType == 'twitter') {
+    var tText = '\n' + lang['tweet-text'] || "";
+    var tTextYoutube = '\n' + lang['tweet-youtube'] || "";
+    var isText = type == 'youtube' ? tTextYoutube : tText;
+    window.open("https://twitter.com/intent/tweet" + "?text=" + encodeURIComponent(title).concat(encodeURIComponent(isText)) + "&url=" + href);
+  }
+  else {
+    return false;
+  }
 }
