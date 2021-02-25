@@ -44,15 +44,15 @@
     <div class="container" id="main">
       <div class="share d-none d-md-block">
         <div class="fb">
-          <a href="https://www.facebook.com/PUBG.VN.Official/?brand_redir=1637843273206257" target="_blank">
+          <a href="https://www.facebook.com/OfficialPUBGNEWSTATE" target="_blank">
             <img src="assets/fbl.png"/>
           </a>
         </div>
         <div class="tw my-3">
-          <a href="https://twitter.com/pubg" target="_blank"><img src="assets/twl.png"/></a>
+          <a href="https://twitter.com/PUBG_NEWSTATE" target="_blank"><img src="assets/twl.png"/></a>
         </div>
         <div class="you">
-          <a href="https://www.youtube.com/channel/UCTDO0RgowRyaAEUrPnBAg4g" target="_blank">
+          <a href="https://www.youtube.com/channel/UCnEaSfPj9ETzrySiRSD1Q1g" target="_blank">
             <img src="assets/youl.png"/>
           </a>
         </div>
@@ -73,7 +73,7 @@
               </div>
             </div>
             <div class="col-12 col-md-6 col-lg px-0 btn px-1">
-              <div class="py-3 watch" onclick="moveTo('trailer')">
+              <div class="py-3 watch" onmousedown="moveTo('trailer')">
                 <img src="assets/play.png" class="mr-3" /><span t="watch-trailer">Watch trailer</span>
               </div>
             </div>
@@ -134,7 +134,7 @@
           <div id="mask" class="active">
             <img src="assets/youtube-play.png" />
           </div>
-          <div class="text-right" id="close-video"><img src="assets/close-video.png" /></div>
+          <div class="text-right cursor-pointer" id="close-video"><img src="assets/close-video.png" /></div>
           <iframe width="560" height="315" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;"
             allowfullscreen id="video"></iframe>
@@ -144,10 +144,10 @@
         <div class="h1 mb-3 text-uppercase" t="share">Share</div>
         <div class="d-flex justify-content-center">
           <div class="mr-3">
-            <a href="https://www.facebook.com/PUBG.VN.Official/?brand_redir=1637843273206257" target="_blank"><img src="assets/fbl.png" /></a>
+            <img src="assets/fbl.png" onclick="socialShare('facebook', 'https://youtu.be/v-7XAgT1Z1w')" />
           </div>
           <div>
-            <a href="https://twitter.com/pubg" target="_blank"><img src="assets/twl.png" /></a>
+            <img src="assets/twl.png" onclick="socialShare('twitter', 'https://youtu.be/v-7XAgT1Z1w')" />
           </div>
         </div>
       </section>
@@ -176,21 +176,21 @@
             <div class="col-5 px-0"><img src="assets/fb.png" class="mr-3" /><span
               class="d-none d-sm-inline text-white">Facebook</span></div>
             <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center text-uppercase">
-              <a href="https://www.facebook.com/PUBG.VN.Official/?brand_redir=1637843273206257" target="_blank" t="like">LIKE</a>
+              <a href="https://www.facebook.com/OfficialPUBGNEWSTATE" target="_blank" t="like">LIKE</a>
             </div>
           </div>
           <div class="row p-4 mx-0 item">
             <div class="col-5 px-0"><img src="assets/tw.png" class="mr-3" /><span
               class="d-none d-sm-inline text-white">Twitter</span></div>
             <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center text-uppercase">
-              <a href="https://twitter.com/pubg" target="_blank" t="follow">FOLLOW</a>
+              <a href="https://twitter.com/PUBG_NEWSTATE" target="_blank" t="follow">FOLLOW</a>
             </div>
           </div>
           <div class="row p-4 mx-0 item">
             <div class="col-5 px-0"><img src="assets/you.png" class="mr-3" /><span
                 class="d-none d-sm-inline text-white">Youtube</span></div>
             <div class="col-5 col-lg-4 col-xl-3 cursor-pointer orange-bg px-2 px-lg-4 py-2 text-center text-uppercase">
-              <a href="https://www.youtube.com/channel/UCTDO0RgowRyaAEUrPnBAg4g" target="_blank" t="subscribe">SUBSCRIBE</a>
+              <a href="https://www.youtube.com/channel/UCnEaSfPj9ETzrySiRSD1Q1g" target="_blank" t="subscribe">SUBSCRIBE</a>
             </div>
           </div>
         </div>
@@ -235,7 +235,7 @@
   </div>
 
   <div id="modal">
-    <div class="overlay"></div>
+    <div class="overlay" id="overlay"></div>
     <div class="wrapper">
       <div class="header">
         <img src="assets/close-w.png" id="modal-close" />

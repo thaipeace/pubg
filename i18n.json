@@ -123,7 +123,12 @@
       "tr": "Turkish",
       "zh-Hans": "Chinese (Simplified)",
       "zh-Hant": "Chinese (Traditional)",
-      "vi": "Vietnamese"
+      "vi": "Vietnamese",
+	    "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Pre-order now!",
+	    "facebook-youtube-textarea": "Pre-order now!",
+	    "tweet-text": "The Original Battle Royale\nPre-order now!\n"
     }
   },
   "de": {
@@ -250,7 +255,13 @@
       "tr": "Türkisch",
       "zh-Hans": "Vereinfachtes Chinesisch",
       "zh-Hant": "Traditionelles Chinesisch",
-      "vi": "Vietnamesisch"
+      "vi": "Vietnamesisch",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Jetzt vorbestellen!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "Jetzt vorbestellen!",
+	    "tweet-text": "The Original Battle Royale\nJetzt vorbestellen!\n"
     }
   },
   "ar": {
@@ -377,7 +388,13 @@
       "tr": "Türk",
       "zh-Hans": "简体中文）",
       "zh-Hant": "中國傳統的）",
-      "vi": "Tiếng Việt"
+      "vi": "Tiếng Việt",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "اطلبها مسبقا الآن!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "اطلبها مسبقا الآن!",
+	    "tweet-text": "The Original Battle Royale\nاطلبها مسبقا الآن!\n"
     }
   },
   "es": {
@@ -504,7 +521,13 @@
       "tr": "Turco",
       "zh-Hans": "Chino (Simplificado)",
       "zh-Hant": "Chino (Tradicional)",
-      "vi": "Vietnamita"
+      "vi": "Vietnamita",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "¡Reserva ya!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "¡Reserva ya!",
+	    "tweet-text": "The Original Battle Royale\n¡Reserva ya!\n"
     }
   },
   "es-MX": {
@@ -631,7 +654,13 @@
       "tr": "Turco",
       "zh-Hans": "Chino (simplificado)",
       "zh-Hant": "Chino (tradicional)",
-      "vi": "Vietnamita"
+      "vi": "Vietnamita",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "¡Cómpralo ya en preventa!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "¡Cómpralo ya en preventa!",
+	    "tweet-text": "The Original Battle Royale\n¡Cómpralo ya en preventa!\n"
     }
   },
   "fr": {
@@ -758,7 +787,13 @@
       "tr": "Turc",
       "zh-Hans": "Chinois (simplifié)",
       "zh-Hant": "Chinois (Traditionel)",
-      "vi": "Vietnamien"
+      "vi": "Vietnamien",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Précommander maintenant !",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "Précommander maintenant !",
+	    "tweet-text": "The Original Battle Royale\nPrécommander maintenant !\n"
     }
   },
   "hi": {
@@ -885,7 +920,13 @@
       "tr": "तुर्की",
       "zh-Hans": "चीनी (सरलीकृत)",
       "zh-Hant": "चीनी (पारंपरिक)",
-      "vi": "वियतनामी"
+      "vi": "वियतनामी",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "अभी प्री-ऑर्डर करें!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "अभी प्री-ऑर्डर करें!",
+	    "tweet-text": "The Original Battle Royale\nअभी प्री-ऑर्डर करें!\n"
     }
   },
   "id": {
@@ -1012,7 +1053,13 @@
       "tr": "Turkish",
       "zh-Hans": "Chinese (Simplified)",
       "zh-HanVietnameset": "Chinese (Traditional)",
-      "vi": "Vietnamese"
+      "vi": "Vietnamese",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Preordina ora!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "Preordina ora!",
+	    "tweet-text": "The Original Battle Royale\nPreordina ora!\n"
     }
   },
   "it": {
@@ -1139,7 +1186,13 @@
       "tr": "Turco",
       "zh-Hans": "Cinese semplificato",
       "zh-Hant": "Cinese tradizionale",
-      "vi": "Vietnamita"
+      "vi": "Vietnamita",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Preordina ora!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "Preordina ora!",
+	    "tweet-text": "'The Original Battle Royale\nPreordina ora!\n"
     }
   },
   "jp": {
@@ -1266,7 +1319,13 @@
       "tr": "トルコ語",
       "zh-Hans": "中国語(簡体字)",
       "zh-Hant": "中国語(繁体字)",
-      "vi": "ベトナム語"
+      "vi": "ベトナム語",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "予約注文受付中！",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "予約注文受付中！",
+	    "tweet-text": "'The Original Battle Royale\n予約注文受付中！\n"
     }
   },
   "kr": {
@@ -1391,7 +1450,13 @@
       "tr": "터키어",
       "zh-Hans": "중국어(간체)",
       "zh-Hant": "중국어(번체)",
-      "vi": "베트남어"
+      "vi": "베트남어",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "지금 사전예약에 참여 하세요!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "지금 사전예약에 참여 하세요!",
+	    "tweet-text": "'The Original Battle Royale\n지금 사전예약에 참여 하세요!\n"
     }
   },
   "ms": {
@@ -1518,7 +1583,13 @@
       "tr": "Bahasa Turki",
       "zh-Hans": "Bahasa China (Ringkas)",
       "zh-Hant": "Bahasa China (Tradisional)",
-      "vi": "Bahasa Vietnam"
+      "vi": "Bahasa Vietnam",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Buat prapesanan sekarang!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "Buat prapesanan sekarang!",
+	    "tweet-text": "'The Original Battle Royale\nBuat prapesanan sekarang!\n"
     }
   },
   "pt-PT": {
@@ -1645,7 +1716,13 @@
       "tr": "Turco",
       "zh-Hans": "Chinês (Simplificado)",
       "zh-Hant": "Chinês (Tradicional)",
-      "vi": "Vietnamita"
+      "vi": "Vietnamita",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Pré-encomenda agora!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "Pré-encomenda agora!",
+	    "tweet-text": "'The Original Battle Royale\nPré-encomenda agora!\n"
     }
   },
   "pt-BR": {
@@ -1772,7 +1849,13 @@
       "tr": "Turco",
       "zh-Hans": "Chinês (simplificado)",
       "zh-Hant": "Chinês (tradicional)",
-      "vi": "Vietnamita"
+      "vi": "Vietnamita",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Compre na pré-venda agora!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "Compre na pré-venda agora!",
+	    "tweet-text": "'The Original Battle Royale\nCompre na pré-venda agora!\n"
     }
   },
   "ru": {
@@ -1899,7 +1982,13 @@
       "tr": "Turkish",
       "zh-Hans": "Chinese (Simplified)",
       "zh-Hant": "Chinese (Traditional)",
-      "vi": "Vietnamese"
+      "vi": "Vietnamese",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Оформи предзаказ сейчас!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "Оформи предзаказ сейчас!",
+	    "tweet-text": "'The Original Battle Royale\nОформи предзаказ сейчас!\n"
     }
   },
   "th": {
@@ -2026,7 +2115,13 @@
       "tr": "ตุรกี",
       "zh-Hans": "จีน (ตัวย่อ)",
       "zh-Hant": "จีน (ดั้งเดิม)",
-      "vi": "เวียดนาม"
+      "vi": "เวียดนาม",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "ลงทะเบียนล่วงหน้าเลย!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "ลงทะเบียนล่วงหน้าเลย!",
+	    "tweet-text": "'The Original Battle Royale\nลงทะเบียนล่วงหน้าเลย!\n"
     }
   },
   "tr": {
@@ -2153,7 +2248,13 @@
       "tr": "Türkçe",
       "zh-Hans": "Çince (Basitleştirilmiş)",
       "zh-Hant": "Çince (Geleneksel)",
-      "vi": "Vietnamca"
+      "vi": "Vietnamca",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Şimdi ön sipariş ver!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "Şimdi ön sipariş ver!",
+	    "tweet-text": "'The Original Battle Royale\nŞimdi ön sipariş ver!\n"
     }
   },
   "zh-Hans": {
@@ -2280,7 +2381,13 @@
       "tr": "土耳其语",
       "zh-Hans": "中文（简体）",
       "zh-Hant": "中文（繁体）",
-      "vi": "越南语"
+      "vi": "越南语",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "立即预购！",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "立即预购！",
+	    "tweet-text": "'The Original Battle Royale\n立即预购！\n"
     }
   },
   "zh-Hant": {
@@ -2407,7 +2514,13 @@
       "tr": "土耳其文",
       "zh-Hans": "中文（簡體）",
       "zh-Hant": "中文（繁體）",
-      "vi": "越南文"
+      "vi": "越南文",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "快來參加事前預約吧！",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "快來參加事前預約吧！",
+	    "tweet-text": "'The Original Battle Royale\n快來參加事前預約吧！\n"
     }
   },
   "vi": {
@@ -2534,7 +2647,13 @@
       "tr": "Tiếng Thổ Nhĩ Kỳ",
       "zh-Hans": "Trung Quốc (Giản Thể)",
       "zh-Hant": "Trung Quốc (Phồn Thể)",
-      "vi": "Tiếng Việt"
+      "vi": "Tiếng Việt",
+      "meta-title": "PUBG : NEW STATE",
+	    "facebook-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-textarea": "Đặt hàng ngay!",
+      "facebook-youtube-title": "PUBG : NEW STATE \nThe Original Battle Royale",
+	    "facebook-youtube-textarea": "Đặt hàng ngay!",
+	    "tweet-text": "'The Original Battle Royale\nĐặt hàng ngay!\n"
     }
   }
 }
